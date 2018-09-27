@@ -38,10 +38,10 @@ def systeminfo():
 
     
 def id():
-    return ('Id', uuid.uuid4())
+    return ('id', uuid.uuid4())
 
 def date_time():
-    return ('DateAndTime', datetime.utcnow().strftime("%A, %d. %B %Y %I:%M%p"))
+    return ('dateAndTime', datetime.utcnow().strftime("%A, %d. %B %Y %I:%M%p"))
 
 def properties():
     properties = {
@@ -49,19 +49,19 @@ def properties():
         'path': sys.path,
         'modules': list(sys.modules.keys())
     }
-    return ('Properties', properties)
+    return ('properties', properties)
 
 def environment():
-    return ('Environment', {k: v for k, v in os.environ.items()})
+    return ('environment', {k: v for k, v in os.environ.items()})
 
 def available_processors():
-    return ('AvailableProcessors', cpu_count())
+    return ('availableProcessors', cpu_count())
 
 def total_memory():
-    return ('TotalMemory', virtual_memory().total)
+    return ('totalMemory', virtual_memory().total)
 
 def max_memory():
-    return ('MaxMemory', virtual_memory().available)
+    return ('maxMemory', virtual_memory().available)
 
 def free_memory():
-    return ('FreeMemory', virtual_memory().free)
+    return ('freeMemory', virtual_memory().free)
