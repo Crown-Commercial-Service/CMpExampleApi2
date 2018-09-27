@@ -1,0 +1,18 @@
+# Logs
+logs
+*.log
+
+# Build target folder
+target/
+
+# Intellij files and folders
+.idea
+
+#VSCode files and folders
+.vscode
+
+# Python temporary files
+__pycache__
+.pytest_cache
+*.egg-info
+.tox
