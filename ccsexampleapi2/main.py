@@ -11,7 +11,7 @@ from flask import request
 
 from psutil import cpu_count, virtual_memory
 
-from api_config import ApiConfig
+from ccsexampleapi2.api_config import ApiConfig
 
 app = Flask(__name__)
 
