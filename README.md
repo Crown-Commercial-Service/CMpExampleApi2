@@ -26,7 +26,7 @@ flask run --port=8080
 
 This will start the api on port `8080`. The run on a different port, for example `18080` simply change the port number that is specified.
 
-You may wish to use a different port when an application and api are being run locally. See the example application repository, `CCSExampleApp2`.
+You may wish to use a different port when an application and api are being run locally. See the example application repository, `CMpExampleApp2`.
 
 Now the api is running locally it is possible make requests to it, for example using curl:
 
@@ -35,7 +35,7 @@ Now the api is running locally it is possible make requests to it, for example u
 will return a JSON object like: `{"dateAndTime":"Thursday, 27. September 2018 01:31PM","id":"1c062164-dbb4-40f9-b015-b7798e484ef1"}`.
 
 ## Build Pipeline ##
-The corresponding example build pipeline project is in the `CCSDevEnvironment` repository as `/terraform/build/api2`. The pipeline currently needs to be stored within the `CCSDevEnvironment` repository because it requires access to various Terraform modules.
+The corresponding example build pipeline project is in the `CMpDevEnvironment` repository as `/terraform/build/api2`. The pipeline currently needs to be stored within the `CMpDevEnvironment` repository because it requires access to various Terraform modules.
 
 ## Dockerfile ##
 The project includes a simple Docker file, this is used by the build pipeline to generate the container image. It is a standard file for a Python project. It must expose port 8080.
