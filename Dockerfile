@@ -21,6 +21,10 @@ ARG BUILD_TIME
 LABEL build_time=$BUILD_TIME
 ENV BUILD_TIME=$BUILD_TIME
 
+ARG VERSION
+LABEL version=$VERSION
+ENV VERSION=$VERSION
+
 # Update and install base packages
 RUN apk update && apk upgrade && apk add build-base linux-headers
 
