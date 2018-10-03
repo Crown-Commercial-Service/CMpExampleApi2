@@ -21,9 +21,9 @@ ARG BUILD_TIME
 LABEL build_time=$BUILD_TIME
 ENV BUILD_TIME=$BUILD_TIME
 
-ARG VERSION
-LABEL version=$VERSION
-ENV VERSION=$VERSION
+ARG CCS_VERSION
+LABEL ccs_version=$CCS_VERSION
+ENV CCS_VERSION=$CCS_VERSION
 
 # Update and install base packages
 RUN apk update && apk upgrade && apk add build-base linux-headers
