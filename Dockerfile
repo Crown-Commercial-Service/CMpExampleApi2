@@ -25,6 +25,8 @@ ARG CCS_VERSION
 LABEL ccs_version=$CCS_VERSION
 ENV CCS_VERSION=$CCS_VERSION
 
+##_PARAMETER_STORE_MARKER_##
+
 # Update and install base packages
 RUN apk update && apk upgrade && apk add build-base linux-headers
 
