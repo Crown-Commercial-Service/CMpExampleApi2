@@ -1,4 +1,4 @@
-FROM python:3-alpine
+FROM python:3.13.0a3-alpine
 
 # Build information
 ARG GIT_OWNER
